@@ -5,7 +5,7 @@ module Fibonacci_generator #(parameter
   input resetn,
   output [DATA_WIDTH-1:0] out
 );
-//Write Your Code Here
+
 reg [DATA_WIDTH-1:0]prev_val;
 reg [DATA_WIDTH-1:0]curr_val;
 reg count=0;
@@ -22,5 +22,5 @@ always@(posedge clk)begin
     
 end
 assign out = prev_val;
-//Do not remove default code
+
 endmodule
